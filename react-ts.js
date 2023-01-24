@@ -11,6 +11,7 @@ module.exports = {
     'plugin:prettier/recommended',
 		
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -19,7 +20,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'react'
+    'react',
+    '@typescript-eslint'
   ],
   rules: {
     'prettier/prettier': ["error", {
@@ -39,6 +41,9 @@ module.exports = {
   settings: {
     react: {
       version: 'detect',
-    }
+    },
+    'import/parsers': {
+      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+    },
   }
 }

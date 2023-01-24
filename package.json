@@ -1,6 +1,6 @@
 {
   "name": "@naveteam/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eslint settings used within projects managed by Nav9",
   "main": "index.js",
   "scripts": {
